@@ -32,20 +32,25 @@ for i in data:
 # print(datas['全市'].keys())
 # print(datas['全市']['住宅價格月指數'])
 
-for i in city:
-    print(f'{city.index(i)}:{i}')
-
-zone = int(input('input number: '))
+count = int(input('input count: '))
 
 find = ['住宅價格月指數','月變動率','季變動率','年變動率']
 for i in find:
     print(f'{find.index(i)}:{i}')
 showData = int(input('input number: '))
 
-# 繪製曲線圖
-plt.plot(datas[city[zone]][find[showData]], label=eng_city[zone])
-months = ['Jan', 'Feb', 'Apr', 'May', 'Jun', 'Jul', 'Aug'] #  , 'Mar'
-plt.xticks(range(len(months)), months)
+while count>0:
+    count-=1
+
+    for i in city:
+        print(f'{city.index(i)}:{i}')
+
+    zone = int(input('input number: '))
+
+    # 繪製曲線圖
+    plt.plot(datas[city[zone]][find[showData]], label=eng_city[zone])
+    months = ['Jan', 'Feb', 'Apr', 'May', 'Jun', 'Jul', 'Aug'] #  , 'Mar'
+    plt.xticks(range(len(months)), months)
 
 # 添加標題和標籤
 if showData==0:
