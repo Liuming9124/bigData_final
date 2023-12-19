@@ -68,6 +68,7 @@ elif showData==3:
 
 plt.xlabel('month')
 
+plt.legend()
 
 # 顯示圖形
 plt.show()
