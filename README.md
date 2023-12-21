@@ -16,4 +16,4 @@ python main.py
 0
 1
 ```
-![image](https://github.com/Liuming9124/bigData_final/assets/80050536/698f5b3d-33f4-4259-b116-b92df9089487)
+![image](https://github.com/Liuming9124/bigData_final/assets/80050536/527e2f18-6802-4158-88bb-1012f3578b98)
